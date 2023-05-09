@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Creative To-Do List</title>
+	<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
+	<link rel="stylesheet" href="src/assets/tailwind.css">
+	<link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="bg-light">
+	<div class="container max-w-[600px] my-0 mx-auto p-8 bg-white shadow-md rounded-lg mt-5">
+		<form class="form flex mb-6" id="todo-form">
+			<input type="text" class="flex-grow p-2 rounded-lg mr-4 text-base bg-light text-[#3F3F3F] font-semibold outline-none focus:shadow-md" id="todo-input" placeholder="Add a task...">
+			<button type="submit" class="text-blue py-2 px-4 border-none shadow-md rounded-lg text-base font-semibold transition outline-none focus:outline-none  hover:bg-light">Add</button>
+		</form>
+		<ul class="list list-none m-0 p-0" id="todo-list">
+		</ul>
+	</div>
+	<script src="main.js" type="module"></script>
+	<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+/* list style */
+.list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem ;
+  border-radius: 8px;
+  position: relative;
+  font-weight: 600;
+  color: #394867;
+  transition: .3s;
+  background: #F1F6F9;
+  border: 1px solid  transparent;
+}
+.list li:hover{
+  box-shadow: 2px 2px 4px #bebebe;
+}
+.list li input[type="checkbox"] {
+  cursor: pointer;
+  position: absolute;
+  left: 1rem;
+  transform: translateY(-50%);
+  accent-color: green;
+  transform: scale(1.5);
+}
+.list li span {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #3F3F3F;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.list li button {
+  background-color: #F44336;
+  color: #FFFFFF;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease;
+}
+.list li button:hover {
+  background-color: #E53935;
+}
