@@ -18,7 +18,42 @@
 		<div class="clock flex text-base font-bold text-center text-blue justify-between w-full gap-2">
 			<span id="time" class="text-blue text-sm rounded-[4px] bg-light px-3"></span> IT LABS <span id="date" class="text-light text-sm rounded-[4px] bg-blue px-3"></span>
 		</div>
+
 		
+		<div class="weahter-container my-3 w-full h-[50px] flex items-center justify-center gap-5 bg-white rounded-lg font-sans transition[0.6s ease-out]">
+			<div class="search-box relative w-[420px] rounded-lg bg-light flex items-center justify-between">
+				<i class="fa-solid fa-location-dot absolute left-[10px] text-blue text-xl"></i>
+				<input type="text" class="text[#F1F6F9] rounded-lg bg-light w-4/5 text-sm font-medium uppercase pl-8 focus:outline-none placeholder:text-sm placeholder:font-medium placeholder:text[#9CA3B6] placeholder:capitalize" placeholder="Enter your location">
+				<button class="fa-solid fa-magnifying-glass cursor-pointer w-[30px] h-[30px] text-blue bg-light rounded-[50%] text-sm transition hover:text-light hover:bg-blue focus:outline-none"></button>
+			</div>
+		
+			<div class="not-found	">
+				<p>Oops! Invalid location :/</p>
+				<img src="src/images/404.png" class="w-[15%] inline">
+			</div>
+		
+			<div class="weather-box w-[350px] flex items-center justify-center gap-[10px]">
+				<p class="temperature h-full text-dark-blue text-xl font-bold flex items-center "></p>
+				<p class="description w-1/2 h-full text-dark-blue text-sm font-medium capitalize flex items-center justify-center"></p>
+				<img src="" class="w-[30px] h-[30px]">
+			</div>
+		
+			<div class="weather-details w-[300px] flex justify-center">
+				<div class="humidity w-1/2 flex justify-center items-center gap-1">
+				<i class="fa-solid fa-water text-dark-blue text-sm"></i>
+				<div class="text">
+					<span class="text-dark-blue text-sm font-medium"></span>
+				</div>
+				</div>
+				<div class="wind w-1/2 flex justify-center items-center gap-4">
+				<div class="text">
+					<span></span>
+					<i class="fa-solid fa-wind"></i>
+				</div>
+				</div>
+			</div>
+		</div>
+
 		<form class="form flex mb-6" id="todo-form">
 			<input type="text" class="flex-grow p-2 rounded-lg mr-4 text-base bg-light text-[#3F3F3F] font-semibold outline-none focus:shadow-md" id="todo-input" placeholder="Add a task...">
 			<button type="submit" class="text-blue py-2 px-4 border-none shadow-md rounded-lg text-base font-semibold transition outline-none focus:outline-none  hover:bg-light">Add</button>
